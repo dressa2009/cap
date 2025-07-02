@@ -1,50 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
+    <title>ChocoCupcake Delícias - Seu Especialista em Cupcakes de Chocolate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Site!</h1>
         <nav>
+            <h1>ChocoCupcake Delícias</h1>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#receitas">Nossas Receitas</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Página Inicial</h2>
-            <p>Este é o conteúdo da sua página inicial. Sinta-se à vontade para adicionar o que quiser aqui!</p>
-            <button id="meuBotao">Clique em Mim!</button>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Os Melhores Cupcakes de Chocolate que Você Já Provou!</h2>
+                <p>Experimente a perfeição em cada mordida. Receitas exclusivas, ingredientes de qualidade e muito amor!</p>
+                <button id="ctaButton">Descubra Nossas Receitas</button>
+            </div>
         </section>
 
         <section id="sobre">
             <h2>Sobre Nós</h2>
-            <p>Aqui você pode falar um pouco sobre você ou sua empresa. Conte sua história!</p>
+            <div class="about-content">
+                <p>Na ChocoCupcake Delícias, somos apaixonados por criar os mais incríveis cupcakes de chocolate. Desde a seleção dos melhores cacaus até a decoração final, cada etapa é feita com carinho e dedicação para garantir uma experiência inesquecível.</p>
+                <p>Nossa missão é trazer alegria e doçura para seus momentos especiais, seja um aniversário, um evento corporativo ou apenas um desejo por algo delicioso.</p>
+            </div>
+        </section>
+
+        <section id="receitas">
+            <h2>Nossas Receitas Exclusivas</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <h3>Cupcake Clássico de Chocolate</h3>
+                    <img src="img/cupcake.jpg" alt="Cupcake Clássico de Chocolate">
+                    <p>Um clássico que nunca sai de moda. Chocolate intenso e cobertura cremosa.</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Cupcake de Chocolate com Recheio de Caramelo</h3>
+                    <img src="img/b17b4cdf7e374ba254c87c4f939b3674.jpg" alt="Cupcake de Chocolate com Recheio de Caramelo">
+                    <p>A combinação perfeita de chocolate e a doçura do caramelo.</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Cupcake de Chocolate</h3>
+                    <img src="" alt="Cupcake de Chocolate">
+                    <p>Sabor e leveza em uma opção deliciosa para todos.</p>
+                </div>
+            </div>
         </section>
 
         <section id="contato">
             <h2>Entre em Contato</h2>
-            <p>Deixe suas informações de contato ou um formulário aqui.</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <button type="submit">Enviar</button>
+            <p>Quer saber mais ou fazer um pedido? Preencha o formulário abaixo ou entre em contato pelos nossos canais.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
             </form>
+            <div class="contact-info">
+                <p>Email: contato@chococupcakedelicias.com</p>
+                <p>Telefone: (XX) XXXX-XXXX</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Meu Primeiro Site. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ChocoCupcake Delícias. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
